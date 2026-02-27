@@ -11,5 +11,15 @@
   "license": "ISC",
   "devDependencies": {
     "live-server": "^1.2.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cornerstone-CICCC/midterm-personal-portfolio-project-JoyIsHappii.git"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Cornerstone-CICCC/midterm-personal-portfolio-project-JoyIsHappii/issues"
+  },
+  "homepage": "https://github.com/Cornerstone-CICCC/midterm-personal-portfolio-project-JoyIsHappii#readme"
 }
