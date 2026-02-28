@@ -1,0 +1,20 @@
+:root {
+  --primary-color: #FFABAB;
+  --secondary-color: #F089B7;
+  --accent-color: #8077B6;
+  --black: #3C2F3A;
+  --white: #F2E9E4;
+  --bg-color: #FEF8F4;
+  --font-family: 'Inter', sans-serif;
+  
+}
+
+h1 {
+  font-family: var(--font-family);
+  color: var(--black);
+}
+p {
+  font-family: var(--font-family);
+  color: var(--black);
+  line-height: 1.5rem;
+}
