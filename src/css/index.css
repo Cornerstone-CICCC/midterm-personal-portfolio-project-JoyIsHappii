@@ -1,7 +1,9 @@
 
+
 body {
-  margin: 0;
+  margin: 0 auto;
   min-height: 100vh;
+  /* max-width: 100vw; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,18 +11,30 @@ body {
 }
 
 .hero {
+  display: flex;
   position: relative;
-  display: inline-block;
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.hero .greeting {
+  /* max-width: 1440px; */
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translateY(-50%);
+  text-align: left;
+  color: var(--black);
+  max-width: 25rem;
+}
+.hero picture {
+  object-fit: cover;
 }
 
-img {
-  max-width: 100vw;
-  max-height: 100vh;
-  width: auto;
+.hero picture img {
+  width: 100%;
   height: auto;
-  display: block;
 }
 .laptop {
   position: absolute;
@@ -63,10 +77,6 @@ a {
   /* opacity: 0; */
 }
 .link img {
-  display: flex;
-  /* display: none; */
-  justify-content: center;
-  align-items: center;
   width: 60px;
   height: 60px;
 }
@@ -89,22 +99,25 @@ a {
   display: none;
 }
 
-.greeting {
-  position: absolute;
-  top: 20%;
-  left: 10%;
-  transform: translateY(-50%);
-  text-align: left;
-  color: var(--black);
-  max-width: 25rem;
-}
-.greeting a {
-  display: inline;
-  text-decoration: underline;
-  color: var(--black);
-  font-family: var(--font-family);
-}
-.greeting a:hover {
-  background-color: var(--primary-color);
-  transition: background-color 0.3s ease;
+@media (max-width: 440px) {
+  body {
+    width: 100%;
+    min-height: 100vh;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+  }
+  .hero picture {
+    display: block;
+    object-fit: cover;
+    width: 100vw;
+  }
+  .link img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+  }
 }
