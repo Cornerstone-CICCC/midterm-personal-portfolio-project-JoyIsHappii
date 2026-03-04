@@ -108,3 +108,34 @@ button:hover {
   border: var(--primary-color) solid 2px;
   box-sizing: border-box;
 }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 20px 40px;
+  /* border-bottom: var(--secondary-color) solid 0.5px; */
+}
+nav ul li a {
+  padding: 10px;
+  background-color: transparent;
+  color: var(--black);
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+nav ul li a:hover {
+  /* background-color: var(--secondary-color); */
+  /* transition: all 0.3s ease; */
+  color: var(--primary-color);
+  box-sizing: border-box;
+  border-bottom: var(--primary-color) solid 4px;
+
+}
+
+nav ul li a.current {
+  color: var(--primary-color);
+  box-sizing: border-box;
+  border-bottom: var(--primary-color) solid 4px;
+}
