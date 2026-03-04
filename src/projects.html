@@ -1,118 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Projects</title>
-  <link rel="stylesheet" href="css/style_guide.css" />
-  <link rel="stylesheet" href="css/projects.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/style_guide.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">    
+  
 </head>
-
 <body>
-  <!-- <nav>
-    <a href="index.html">Home</a>
-    <ul>
-      <li><a href="projects.html">Projects</a></li>
-      <li>|</li>
-      <li><a href="about.html">About Me</a></li>
-    </ul>
-  </nav> -->
 
-  <main class="content">
-    <section class="side-bar">
-        <div class="menu">
-            <a href="#">UI/UX Design</a>
-            <a href="#">Project Design</a>
-            <a href="#">Graphic & Illustration</a>
-            <a href="#">Photography</a>
+
+    <!-- Web Design -->
+    <section class="content" id="web-design">
+        
+
+      <div class="side-bar">
+        <h1>Web Design Projects</h1>
+
+        <section class="tab-bar">
+          <ul>
+            <li><a href="#web-design">Web Design</a></li>
+            <li><a href="#illustration">Graphic Design & Illustration</a></li>
+            <li><a href="#photography">Photography</a></li>
+          </ul>
+        </section>
+
+        <div class="menu skills">
+            <p>Tools:</p>
+            <div class="skill-tools">
+            <img src="images/icons/Adobe Illustrator.png" alt="Adobe Illustrator">
+            <img src="images/icons/Adobe Photoshop.png" alt="Adobe Photoshop">
+            <img src="images/icons/Canva.png" alt="Canva">
+            <img src="images/icons/ChatGPT.png" alt="ChatGPT">
+            <img src="images/icons/CSS3.png" alt="CSS3">
+            <img src="images/icons/figma.png" alt="Figma">
+            <img src="images/icons/Github Copilot.png" alt="Github Copilot">
+            <img src="images/icons/GitHub.png" alt="GitHub">
+            <img src="images/icons/Html 5.png" alt="HTML 5">
+            <img src="images/icons/JavaScript.png" alt="JavaScript">
+            <img src="images/icons/Notion.png" alt="Notion">
+            <img src="images/icons/Visual Studio Code 2019.png" alt="Visual Studio Code">
+            <img src="images/icons/WebFlow.png" alt="WebFlow">
+            
+            </div>
+            
         </div>
-        <div>
-            <a href="#">Contact</a>
-            <a href="#">Play Game?</a>
-        </div>
+    </div>
 
+    <div class="projects">
+        <div class="two-columns">
 
-    </section>
-
-    <section class="uiux-section right-side">
-      <h1>My UI/UX Design Projects</h1>
-
-      <div class="projects">
-        <div class="project-card" id="project-7van">
-          <img class="cover-image" src="images/7van/7van-cover.jpg" alt="7van cover" />
-          <div class="project-info">
-            <h3>7van</h3>
-            <p>A social media application for karate practitioners, to contain content and community about karate.</p>
-            <div class="skills">
-              <div class="tools">
-                <p>Tools:</p>
-                <img src="images/icons/figma.png" alt="Figma" />
+            <div class="project-card">
+              <div class="seven-van">
+                <input class="overview-toggle" type="radio" name="project-overview" id="overview-seven-van">
+                <label class="overview-btn" for="overview-seven-van">Overview</label>
+                <img class="cover" src="images/projects/7van.png" alt="7van">
+                <div class="project-info">
+                  <h3>7van</h3>
+                  <p>A responsive website for 7VAN, a Brazilian Jiu-Jitsu academy, designed to welcome newcomers and make joining simple. It highlights essential class and membership information in an engaging way—encouraging applications and supporting the growth of the 7VAN community. 🥋</p>
+                  
+                  <button type="button">View Project</button>
+                </div>
               </div>
-              <div class="devices">
-                <p>Devices:</p>
-                <img src="images/icons/mobile.png" alt="Mobile" />
-                <img src="images/icons/tablet.png" alt="Tablet" />
-                <img src="images/icons/desktop.png" alt="Desktop" />
+
+              <div class="ippon">
+                <input class="overview-toggle" type="radio" name="project-overview" id="overview-ippon">
+                <label class="overview-btn" for="overview-ippon">Overview</label>
+                <img class="cover" src="images/projects/ippon.png" alt="Ippon">
+                <div class="project-info">
+                  <h3>IPPON</h3>
+                  <p>A dedicated social media platform built exclusively for karate practitioners — bringing together news, events, training resources, and a focused community in one place. Designed to cut through the noise of general social media, this app helps martial artists stay informed, sharpen their skills, and connect with others who share the same passion for karate. 🥋</p>
+                  <button type="button" onclick="window.location.href='https://www.figma.com/proto/Kx6Ed6jEZP36SnrSQaXylS/7VAN-BJJ-Website?page-id=414%3A2&node-id=417-2430&p=f&viewport=67%2C319%2C0.04&t=YQNlMBXVos6DcfXO-1&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=417%3A2430'" target="_blank">View Project</button>
+                </div>
+              </div>
+
+              <div class="bunny">
+                <input class="overview-toggle" type="radio" name="project-overview" id="overview-bunny">
+                <label class="overview-btn" for="overview-bunny">Overview</label>
+                <img class="cover" src="images/projects/bunny.png" alt="Bunny">
+                <div class="project-info">
+                  <h3>Bunny World</h3>
+                  <p>A social media application for karate practitioners, to contain content and community about karate.</p>
+                  <button type="button" onclick="window.location.href='https://www.figma.com/proto/ja7q2DRAKzivELpNYsCPmD/Bunny-World?page-id=68%3A6102&node-id=145-2708&p=f&viewport=355%2C239%2C0.03&t=jD2bfz3001ocNjMT-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=145%3A2708'" target="_blank">View Project</button>
+                </div>
+              </div>
+
+              <div class="covid-room">
+                <input class="overview-toggle" type="radio" name="project-overview" id="overview-covid-room">
+                <label class="overview-btn" for="overview-covid-room">Overview</label>
+                <img class="cover" src="images/project_design/208.png" alt="COVID-19 Monitoring System">
+                <div class="project-info">
+                  <h3>Monitoring system for Negative Pressure Room for COVID-19 Patients</h3>
+                  <p>Developed a negative pressure room for COVID-19 patients, featuring a monitoring system with essential capabilities for tracking room temperature, pressure, and humidity.
+                    <br>Created an interface screen monitoring feature to minimize room entry, enhancing safety and efficiency for healthcare providers, with user-friendly design for non-technician users.</p>
+                  <button type="button" onclick="window.location.href=''" target="_blank">View Project</button>
+                </div>
+              </div>
+              <div class="google-classroom">
+                <input class="overview-toggle" type="radio" name="project-overview" id="overview-google-classroom">
+                <label class="overview-btn" for="overview-google-classroom">Overview</label>
+                <img class="cover" src="images/projects/google.png" alt="Google Classroom">
+                <div class="project-info">
+                  <h3>Google Classroom Integration</h3>
+                  <p>Developed a negative pressure room for COVID-19 patients, featuring a monitoring system with essential capabilities for tracking room temperature, pressure, and humidity.
+                    <br>Created an interface screen monitoring feature to minimize room entry, enhancing safety and efficiency for healthcare providers, with user-friendly design for non-technician users.</p>
+                  <button type="button" onclick="window.location.href=''" target="_blank">View Project</button>
+                </div>
               </div>
             </div>
-            <button>Learn More</button>
+        </div>
+    </div>
+
+    <!-- Illustration -->
+    </section>
+    <section class="content" id="illustration">
+        <div class="side-bar">
+          <h1>Graphic Design & Illustration</h1>
+
+          <div class="menu skills">
+            <p>Tools:</p>
+            <div class="skill-tools">
+            <img src="images/icons/Adobe Illustrator.png" alt="Adobe Illustrator">
+            <img src="images/icons/Adobe Photoshop.png" alt="Adobe Photoshop">
+            
           </div>
+            
+        </div>
         </div>
 
-        <div class="project-card" id="project-ippon">
-          <img class="cover-image" src="images/ippon/Ippon-cover.jpg" alt="Ippon cover" />
-          <div class="project-info">
-            <h3>Ippon</h3>
-            <p>A social media application for karate practitioners, to contain content and community about karate.</p>
-            <div class="skills">
-              <div class="tools">
-                <p>Tools:</p>
-                <img src="images/icons/figma.png" alt="Figma" />
-              </div>
-              <div class="devices">
-                <p>Devices:</p>
-                <img src="images/icons/mobile.png" alt="Mobile" />
-                <img src="images/icons/tablet.png" alt="Tablet" />
-                <img src="images/icons/desktop.png" alt="Desktop" />
-              </div>
-            </div>
-            <button>Learn More</button>
-          </div>
-        </div>
+   
+            <div class="projects">
+              <div class="two-columns">
+                <div class="artwork">
+                    <img src="images/artwork/Frames1.png" alt="">
+                    <img src="images/artwork/Frames2.png" alt="">
+                    <img src="images/artwork/Frames3.png" alt="">
+                    <img src="images/artwork/Frames4.png" alt="">
+                </div>                      
 
-        <div class="project-card" id="project-bunny">
-          <img class="cover-image" src="images/bunny/bunny-cover.png" alt="Bunny cover" />
-          <div class="project-info">
-            <h3>Bunny</h3>
-            <p>A social media application for karate practitioners, to contain content and community about karate.</p>
-            <div class="skills">
-              <div class="tools">
-                <p>Tools:</p>
-                <img src="images/icons/figma.png" alt="Figma" />
               </div>
-              <div class="devices">
-                <p>Devices:</p>
-                <img src="images/icons/mobile.png" alt="Mobile" />
-                <img src="images/icons/tablet.png" alt="Tablet" />
-                <img src="images/icons/desktop.png" alt="Desktop" />
-              </div>
+
+                
             </div>
-            <button>Learn More</button>
-          </div>
-        </div>
-      </div>
     </section>
 
-    <section class="project-design right-side">
-      <h1>My Project Design Projects</h1>
 
-      <div class="project-card" id="project-bunny">
-          <img class="cover-image" src="images/bunny/bunny-cover.png" alt="Bunny cover" />
-          <div class="project-info">
-            <h3>Bunny</h3>
-            <p>A social media application for karate practitioners, to contain content and community about karate.</p>
-    </section>
-
-  </main>
+    <!-- photography -->
+    <section class="content" id="photography">
+  </section>
 </body>
 </html>

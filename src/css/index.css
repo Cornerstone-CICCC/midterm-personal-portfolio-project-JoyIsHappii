@@ -28,6 +28,13 @@ body {
   color: var(--black);
   max-width: 25rem;
 }
+.greeting h1 {
+  font-size: 3rem;
+}
+.greeting p {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
 .hero picture {
   object-fit: cover;
 }
@@ -38,7 +45,7 @@ body {
 }
 .laptop {
   position: absolute;
-  top: 40%;
+  top: 42%;
   left: 45%;
 }
 .poster {
@@ -54,7 +61,7 @@ body {
 .experience {
   position: absolute;
   top: 50%;
-  left: 90%;
+  left: 85%;
 }
 .camera {
   position: absolute;
@@ -68,7 +75,7 @@ a {
   width: 100%;
   height: 100%;
   text-decoration: none;
-  color: black;
+  color: var(--black);
 }
 .link {
   width: 8rem;
@@ -91,9 +98,9 @@ a {
 .link:hover {
   opacity: 0.8;
   transition: opacity 0.3s ease;
-  border: var(--secondary-color) solid 1px;
+  border: var(--primary-color) dashed 4px;
   border-radius: 100%;
-  background-color:var(--white);
+  background-color:var(--accent-red);
 }
 .link:hover img {
   display: none;
