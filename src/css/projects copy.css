@@ -9,11 +9,6 @@ body {
   width: 100vw;
 }
 
-section {
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
 .hero {
   display: grid;
   grid-template-columns: repeat(12, minmax(0, 1fr));
@@ -23,7 +18,8 @@ section {
   min-height: 70vh;
   justify-items: center;
   align-items: center;
-  gap: 20px;
+  gap: 1.5rem;
+  padding: 1.5rem;
   padding: 0 40px;
 }
 
@@ -106,6 +102,8 @@ section {
 
 .hero .profile .contact a img {
   display: block;
+  width: 36px;
+  height: 36px;
   object-fit: cover;
 }
 
@@ -125,14 +123,17 @@ section {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 0;
+  border: 1px solid var(--secondary-color);
+  height: 100%;
+  padding: 20px;
 }
 
 .hero .video video {
-  display: flex;
-  width: 100%;
-  object-fit: cover;
-  height: auto;
+    display: block;
+    width: 100%;
+    max-width: 920px;
+    object-fit: cover;
+    height: 70vh;
 }
 
 .skill-tools {
@@ -373,11 +374,27 @@ section {
 
 .artwork {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
+  background-color: var(--secondary-color-fade);
+  padding: 20px;
 }
 
 .artwork img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photography {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+  background-color: var(--secondary-color-fade);
+  padding: 20px;
+}
+
+.photography img {
   display: block;
   width: 100%;
   height: auto;
@@ -389,6 +406,36 @@ section {
   justify-content: center;
   align-items: center;
   padding: 0 40px;
+  background-color: var(--secondary-color-fade);
+}
+
+.experience-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+}
+
+.experience-intro img {
+  display: block;
+  width: 50%;
+  height: auto;
+  object-fit: cover;
+  background-color: transparent;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+  padding: 20px;
+  background-color: var(--bg-color);
+  /* border-left: var(--primary-color) solid 4px; */
+  border-radius: 20px;
 }
 
 .carousel {
@@ -397,9 +444,10 @@ section {
   justify-content: center;
   align-items: stretch;
   gap: 40px;
-  margin-top: 2rem;
+  padding: 40px;
   width: 100%;
 }
+
 
 .carousel-item {
   display: flex;
@@ -407,16 +455,29 @@ section {
   align-items: center;
   justify-content: center;
   width: calc(100% / 3);
-  border: var(--secondary-color) solid 1px;
+  border: var(--primary-color) solid 1px;
   text-align: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   padding: 40px;
+  background-color: var(--secondary-color-fade);
+
+}
+
+.carousel-item img {
+  display: block;
+  width: calc(100% / 4);
+  aspect-ratio: 1 / 1;
+  background-color: transparent;
+  opacity: 0.7;
 }
 
 .carousel-item ul {
   padding-top: 10px;
   margin-top: 10px;
-  border-top: var(--primary-color) 1px solid;
+  border-top: var(--secondary-color) 1px solid;
+  background-color: transparent;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .carousel-item ul li {
@@ -425,7 +486,23 @@ section {
   margin-bottom: 0.5rem;
   font-family: "Rubik", sans-serif;
   font-weight: 100;
+  background-color: transparent;
 }
+
+.contact-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 12px;
+    gap: 0.5rem;
+    border-top: var(--primary-color) solid 1px;
+  }
+
+.contact-footer img {
+    width: 36px;
+    height: 36px;
+  }
 
 @media (max-width: 768px) {
   body {
@@ -455,7 +532,7 @@ section {
     justify-content: flex-start;
     gap: 12px;
     padding: 0 12px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
 
   .skill-tools img {
@@ -560,7 +637,7 @@ section {
   }
 
   .artwork {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .experience {
@@ -575,7 +652,11 @@ section {
   .carousel-item {
     width: 100%;
     padding: 24px 16px;
+    display: flex;
+    position: sticky;
+    top: 0;
   }
+
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
@@ -602,7 +683,7 @@ section {
     justify-content: flex-start;
     gap: 12px;
     padding: 0 20px;
-    overflow-x: auto;
+    /* overflow-x: auto; */
   }
 
   .content {
