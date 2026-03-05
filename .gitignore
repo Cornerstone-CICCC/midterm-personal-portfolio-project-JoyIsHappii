@@ -2,3 +2,5 @@ node_modules
 .vscode
 project-fix.html
 src/css/project-fix.css
+about.html
+src/css/about.css

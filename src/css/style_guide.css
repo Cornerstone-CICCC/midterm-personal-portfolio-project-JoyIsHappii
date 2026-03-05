@@ -5,7 +5,7 @@
   --accent-red: #FCBEAD;
   --accent-green: #C3CD7F;
   --accent-blue: #B0D5F4;
-  --black: #49494A;
+  --black: #777777;
   --grey-3: #86828C;
   --grey-2: #DCDBDC;
   --grey-1: #ECEAE9;
@@ -15,7 +15,7 @@
   
 }
 
-h1 {font-size: 2.586rem;}
+h1 {font-size: 4rem;}
 h2 {font-size: 2.488rem;}
 h3 {font-size: 2.074rem;}
 h4 {font-size: 1.728rem;}
@@ -27,12 +27,13 @@ h1, h2, h3, h4, h5, h6 {
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
-  color: var(--black);
+  color: var(--primary-color);
   background-color: transparent;
   line-height: 1.5;
+
 }
 
-p {
+ p {
   font-size: 1rem;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
@@ -44,18 +45,35 @@ p {
 }
 small {
   font-size: 0.833rem;
-  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  color: var(--black);
   background-color: transparent;
   line-height: 1.5;
 }
 
 a {
-  font-size: 1rem;
-  font-family: "Poppins", sans-serif;
-  text-decoration: none;
-  color: var(--black);
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--black);
+    background-color: transparent;
+    line-height: 1.5;
+    color: var(--black);
+    text-decoration: none;
 }
 
+label {
+  font-size: 3rem;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    color: var(--black);
+}
 div {
   background-color: transparent;
 }
@@ -79,6 +97,10 @@ nav{
     justify-content: space-between;
     /* border: black solid 1px; */
     padding: 20px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
 }
 
 nav ul{
@@ -91,6 +113,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    color: var(--primary-color);
 }
 
 button {
@@ -113,7 +136,7 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   padding: 20px 40px;
   /* border-bottom: var(--secondary-color) solid 0.5px; */
 }
@@ -124,6 +147,7 @@ nav ul li a {
   border: none;
   cursor: pointer;
   box-sizing: border-box;
+  color: var(--primary-color);
 }
 nav ul li a:hover {
   /* background-color: var(--secondary-color); */
@@ -138,4 +162,8 @@ nav ul li a.current {
   color: var(--primary-color);
   box-sizing: border-box;
   border-bottom: var(--primary-color) solid 4px;
+}
+
+br {
+  line-height: 2;
 }
