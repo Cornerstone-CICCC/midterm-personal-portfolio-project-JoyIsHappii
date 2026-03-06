@@ -86,21 +86,27 @@ a {
 .link img {
   width: 60px;
   height: 60px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--white);
+  border-radius: 100%;
 }
+
 .link p {
   display: none;
 }
 
 .link:hover p {
   display: block;
+  color: var(--black);
+  font-weight: 500;
 }
 
 .link:hover {
-  opacity: 0.8;
+  opacity: 1;
   transition: opacity 0.3s ease;
-  border: var(--primary-color) dashed 4px;
+  border: var(--primary-color) dashed 2px;
   border-radius: 100%;
-  background-color:var(--accent-red);
+  background-color:var(--secondary-color-fade);
 }
 .link:hover img {
   display: none;

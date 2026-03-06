@@ -489,6 +489,16 @@ body {
   background-color: transparent;
 }
 
+.experience-intro {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 20px;
+  width: 75%;
+}
+
 .contact-footer {
     display: flex;
     justify-content: center;
