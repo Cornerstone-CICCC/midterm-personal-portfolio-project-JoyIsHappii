@@ -27,8 +27,8 @@ body {
   justify-items: center;
   align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem;
   padding: 0 40px;
+  margin-top: 80px;
 }
 
 .hero .profile {
