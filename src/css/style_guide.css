@@ -83,18 +83,6 @@ div {
   background-color: transparent;
 }
 
-
-/* @media (max-width: 425px) {
-  :root {
-    font-size: 90%;
-  }
-}
-@media (max-width: 768px) {
-  :root {
-    font-size: 95%;
-  }
-} */
-
 /* navigation */
 nav{
     display: flex;
@@ -155,8 +143,6 @@ nav ul li a {
   color: var(--primary-color);
 }
 nav ul li a:hover {
-  /* background-color: var(--secondary-color); */
-  /* transition: all 0.3s ease; */
   color: var(--primary-color);
   box-sizing: border-box;
   border-bottom: var(--primary-color) solid 4px;
